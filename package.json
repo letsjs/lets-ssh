@@ -1,0 +1,45 @@
+{
+  "name": "lets-ssh",
+  "version": "0.0.0",
+  "description": "SSH connection and command management for Lets",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:letsjs/lets-ssh.git"
+  },
+  "keywords": [
+    "lets",
+    "ssh",
+    "remote",
+    "connection",
+    "scp",
+    "sftp"
+  ],
+  "author": "Andreas Hultgren",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/letsjs/lets-ssh/issues"
+  },
+  "homepage": "https://github.com/letsjs/lets-ssh",
+  "dependencies": {
+    "ssh2": "~0.2.19"
+  },
+  "peerDependencies": {
+    "lets": "^0.0.2"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.2",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-jshint": "^0.8.0",
+    "grunt-contrib-watch": "^0.5.3",
+    "grunt-mocha-test": "^0.9.3",
+    "mocha": "^1.17.1",
+    "sinon": "^1.8.2",
+    "sinon-chai": "^2.5.0",
+    "chai": "^1.9.0",
+    "lets": "^0.0.1"
+  }
+}
