@@ -28,7 +28,7 @@
     "ssh2": "~0.2.19"
   },
   "peerDependencies": {
-    "lets": "^0.0.2"
+    "lets": "^0.0.3"
   },
   "devDependencies": {
     "grunt": "^0.4.2",

@@ -85,7 +85,9 @@ describe('After emitting `disconnect`', function () {
 
 describe('After emitting `deploy`', function () {
   before(function (next) {
+    config = lets.load(Letsfile);
     lets.runTasks(config, 'deploy', 'testing', next);
+    config._stages.testing._connection.emit('ready');
   });
 
   describe('the onDeploy listener', function () {
