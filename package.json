@@ -1,6 +1,6 @@
 {
   "name": "lets-ssh",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "SSH connection and command management for Lets",
   "main": "index.js",
   "scripts": {
@@ -39,7 +39,6 @@
     "mocha": "^1.17.1",
     "sinon": "^1.8.2",
     "sinon-chai": "^2.5.0",
-    "chai": "^1.9.0",
-    "lets": "^0.0.1"
+    "chai": "^1.9.0"
   }
 }
