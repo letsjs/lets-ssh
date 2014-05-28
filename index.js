@@ -9,10 +9,4 @@ module.exports = exports = lets.plugin(function (stage) {
 });
 
 exports.connect = require('./lib/connect');
-
-exports.disconnect = function disconnect () {
-  this.getConnection(function (connection) {
-    //## Check if the connection has been closed already
-    connection.end();
-  });
-};
+exports.disconnect = require('./lib/disconnect');

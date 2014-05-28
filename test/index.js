@@ -25,8 +25,9 @@ sinon.spy(letsSSH, 'connect');
 sinon.spy(letsSSH, 'disconnect');
 
 Connection.prototype.connect = sinon.spy();
-Connection.prototype.end = sinon.spy();
+//Connection.prototype.end = sinon.spy();
 Connection.prototype._exec = sinon.spy(require('./execStub'));
+Connection.prototype.end = sinon.spy(require('./endStub'));
 
 exports.onDeployCallback = null;
 exports.onDeploy = function (options, next) {
@@ -91,12 +92,12 @@ describe('After emitting `deploy`', function () {
   });
 
   describe('the onDeploy listener', function () {
-    it('shoud have been called', function () {
+    it('should have been called', function () {
       exports.onDeployCallback.should.have.always.been.calledWithMatch(
         sinon.match.falsy, 'test');
 
       Connection.prototype._exec.should.always.have.been.calledWithMatch(
-        'test', sinon.match.object, sinon.match.func);
+        'test', sinon.match.func);
     });
   });
 });

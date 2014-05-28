@@ -2,7 +2,7 @@
 
 var Readable = require('stream').Readable;
 
-module.exports = function (cmd, options, callback) {
+module.exports = exports = function (cmd, callback) {
   var stream = new Readable(),
       i = 0;
 
