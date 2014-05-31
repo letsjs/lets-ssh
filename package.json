@@ -25,10 +25,10 @@
   },
   "homepage": "https://github.com/letsjs/lets-ssh",
   "dependencies": {
-    "ssh2": "^0.2.23"
+    "ssh2": "^0.2.25"
   },
   "peerDependencies": {
-    "lets": "^0.0.5"
+    "lets": "0.0.x"
   },
   "devDependencies": {
     "grunt": "^0.4.2",
