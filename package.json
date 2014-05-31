@@ -1,6 +1,6 @@
 {
   "name": "lets-ssh",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "SSH connection and command management for Lets",
   "main": "index.js",
   "scripts": {
