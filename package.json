@@ -25,7 +25,8 @@
   },
   "homepage": "https://github.com/letsjs/lets-ssh",
   "dependencies": {
-    "ssh2": "^0.2.25"
+    "prompt": "^0.2.13",
+    "ssh2": "^0.3.3"
   },
   "peerDependencies": {
     "lets": "0.0.x"
